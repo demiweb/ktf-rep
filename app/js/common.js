@@ -69,14 +69,24 @@ function openSubMenus() {
     } else {
         subMenus.forEach((btn) => {
             btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                btn.closest('li').classList.toggle('active');
+                if (window.innerWidth > 1023) {
+
+                } else {
+                    e.preventDefault();
+                    btn.closest('li').classList.toggle('active');
+                }
+
             })
         })
     }
 }
 openSubMenus();
-
+$(".go-up").click(function(e) {
+    e.preventDefault();
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("body").offset().top
+    }, 600);
+});
 
 let burgerBtn = [...document.querySelectorAll('.burger-btn')];
 

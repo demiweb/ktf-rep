@@ -110,6 +110,10 @@
   }
 }
 @media screen and (max-width: 1300px) {
+  .all-task .single-task  {
+    height: 440px;
+    width: calc((100% / 4) - (6px / 4));
+  }
   .recommends-container {
     .left {
       width: 45%;
@@ -196,6 +200,11 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .footer-menu {
+    width: 46%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .seo-container .container {
     p {
       margin-bottom: 22px;
@@ -363,7 +372,64 @@
     padding-top: 50px;
   }
 }
+
 @media screen and (max-width: 1050px) {
+  .footer {
+    padding-top: 70px;
+  }
+  .footer-list {
+    ul {
+      li {
+        &.menu-item-has-children {
+          > ul {
+            opacity: 0 !important;
+            pointer-events: none !important;
+          }
+          > a {
+            &::after {
+              transform: translate(0, -50%) !important;
+            }
+          }
+          &.active {
+            > ul {
+              opacity: 1 !important;
+              pointer-events: auto !important;
+            }
+            > a {
+              &::after {
+                transform: translate(0, -50%) rotate(180deg) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .top-footer {
+    flex-wrap: wrap;
+    .footer-menu {
+      order: 1;
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #4E4E4E;
+      .footer-list {
+        width: 70%;
+      }
+    }
+    .footer-company {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+      max-width: none;
+      order: 2;
+    }
+    .footer-contacts {
+      order: 3;
+      width: calc(50% - 10px);
+    }
+  }
   .our-team {
     padding: 80px 0;
   }
@@ -428,6 +494,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .all-task .single-task {
+    height: 340px;
+  }
   .our-news {
     padding: 30px 0 60px;
   }
@@ -511,6 +580,22 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .default-hero h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .default-hero {
+    padding-top: 40px;
+  }
+  .our-all-task .our-task__container .right {
+    padding-top: 0;
+  }
+  .all-task .single-task  {
+    width: calc((100% / 3) - (4px / 3));
+  }
+  .our-all-task {
+    padding: 70px 0;
+  }
   .single-news .text p {
     margin: 10px 0 10px;
     line-height: 1.4;
@@ -594,6 +679,9 @@
   }
 }
 @media screen and (max-width: 950px) {
+  .top-footer .footer-menu .footer-list {
+    width: 80%;
+  }
   .team-slider-container {
     position: relative;
 
@@ -736,6 +824,26 @@
   }
 }
 @media screen and (max-width: 650px) {
+  .all-task .single-task {
+    width: calc((100% / 2) - (2px / 2));
+  }
+  .top-footer .footer-menu .footer-list {
+    width: 100%;
+  }
+  .top-footer {
+    padding-bottom: 0;
+    .footer-company {
+      order: 3;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .footer-contacts {
+      width: 100%;
+      order: 2;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #4E4E4E;
+    }
+  }
   .single-news .text {
     max-width: 210px;
   }
@@ -944,7 +1052,42 @@
     }
   }
 }
+@media screen and (max-width: 620px) {
+  .footer-company .go-up {
+    width: 60px;
+  }
+  .bottom-footer  {
+    position: static;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    .copyright {
+      position: static;
+      transform: none;
+      margin-bottom: 12px;
+
+    }
+  }
+  .footer-title {
+    margin-bottom: 15px;
+  }
+  .footer-list {
+    flex-direction: column;
+    align-items: flex-start;
+    ul {
+      margin-bottom: 22px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 @media screen and (max-width: 480px) {
+  .all-task .single-task {
+    height: 440px;
+  }
   .team-slider {
     overflow: hidden;
     width: calc(100% - 60px);
@@ -999,6 +1142,9 @@
   }
 }
 @media screen and (max-width: 424px) {
+  .all-task .single-task {
+    height: 340px;
+  }
   .single-news {
     width: 100%;
   }
@@ -1029,6 +1175,12 @@
   }
 }
 @media screen and (max-width: 374px) {
+  .all-task .single-task {
+    width: 100%;
+  }
+  .footer {
+    padding-top: 40px;
+  }
   .single-news {
     width: 100%;
     min-height: 320px;
