@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-<header class="header">
+<header class="header js-anim anim-fadeT">
     <div class="container">
         <div class="header-container">
             <div class="header-top">
@@ -126,7 +126,7 @@
                         <a href="#">logistic@ktf.com.ua</a>
                     </div>
                 </div>
-                <div class="hero-text">
+                <div class="hero-text js-anim anim-top">
                     <div class="default-hero">
                         <h1>Новые правила морских грузоперевозок 2021</h1>
 
@@ -143,12 +143,12 @@
     <section class="service-info">
         <div class="container">
             <div class="service-info__container">
-                <div class="left">
+                <div class="left js-anim anim-right">
                     <div class="img">
                         <img class="lazyload" data-src="./img/serv-img-2.jpg" alt="">
                     </div>
                 </div>
-                <div class="service-info__text">
+                <div class="service-info__text anim-left">
                     <div class="title-block">
                         <h1 class="title">КТФ – 4PL провайдер логистических услуг (h1)</h1>
                     </div>
@@ -214,12 +214,12 @@
     <section class="service-info service-info--reverse">
         <div class="container">
             <div class="service-info__container">
-                <div class="left">
+                <div class="left js-anim anim-left">
                     <div class="img">
                         <img class="lazyload" data-src="./img/comp-img-b.jpg" alt="">
                     </div>
                 </div>
-                <div class="service-info__text">
+                <div class="service-info__text js-anim anim-right">
                     <div class="title-block">
                         <h2 class="title">Открытие для операций по приему, хранению, погрузке, выгрузке
                             и  выдаче грузов</h2>
@@ -251,7 +251,7 @@
 
     <section class="our-news">
         <div class="container">
-            <div class="head">
+            <div class="head js-anim anim-fadeT">
                 <div class="title-block">
                     <p class="subtext">Следите за нашими новостями</p>
                     <h3 class="title">Мы публикуем только самое <strong>важное</strong> для вас.</h3>
@@ -268,7 +268,7 @@
                 </a>
             </div>
             <div class="news-container">
-                <a href="#" class="single-news">
+                <a href="#" class="single-news js-anim anim-fadeT">
                     <div class="img">
                         <img class="lazyload" data-src="./img/n-1.jpg" alt="">
                     </div>
@@ -289,7 +289,7 @@
 
                     </div>
                 </a>
-                <a href="#" class="single-news">
+                <a href="#" class="single-news js-anim anim-fadeT">
                     <div class="img">
                         <img class="lazyload" data-src="./img/n-2.jpg" alt="">
                     </div>
@@ -309,7 +309,7 @@
 
                     </div>
                 </a>
-                <a href="#" class="single-news">
+                <a href="#" class="single-news js-anim anim-fadeT">
                     <div class="img">
                         <img class="lazyload" data-src="./img/n-3.jpg" alt="">
                     </div>
@@ -429,7 +429,7 @@
 
 
                 </div>
-                <a href="" class="btn btn--white">начать сотрудничество
+                <a href="" class="btn btn--white btn--form">начать сотрудничество
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
 
@@ -452,6 +452,56 @@
 
     </div>
 </footer>
+
+<div class="modal-window modal-window__request">
+    <div class="modal-container">
+        <div class="close-modal">
+            <img src="./img/close-btn.svg" alt="">
+        </div>
+        <div class="modal-content">
+            <p class="modal-title">
+                Оставить заявку
+            </p>
+            <div class="form-modal">
+                <div class="form">
+                    <form action="">
+                        <div class="input-cont">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="input-cont">
+                            <input type="text" placeholder="+380 (__) ___-__-__">
+                        </div>
+                        <div class="input-cont">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-cont">
+                            <input type="text" placeholder="Тип техники">
+                        </div>
+
+                        <div class="input-cont">
+                            <input type="text" placeholder="Место загрузки (Страна)">
+                        </div>
+                        <div class="input-cont">
+                            <input type="text" placeholder="Место загрузки (Страна)">
+                        </div>
+                        <button class="btn btn--trans btn--thx">
+                            отправить заявку <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+
+                            <path d="M21.8657 10.6758L14.9907 3.80079C14.8117 3.62174 14.5216 3.62174 14.3426 3.80079C14.1636 3.97984 14.1636 4.26988 14.3426 4.44889L20.4353 10.5415H0.458348C0.205004 10.5415 0 10.7465 0 10.9999C0 11.2532 0.205004 11.4582 0.458348 11.4582H20.4353L14.3426 17.5508C14.1636 17.7298 14.1636 18.0199 14.3426 18.1989C14.4321 18.2884 14.5494 18.3332 14.6667 18.3332C14.784 18.3332 14.9012 18.2884 14.9908 18.1989L21.8658 11.3239C22.0448 11.1449 22.0448 10.8548 21.8657 10.6758Z"
+                            />
+
+
+                        </svg>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 <script
