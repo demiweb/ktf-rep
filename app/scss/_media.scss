@@ -77,6 +77,12 @@
 
 
 @media screen and (max-width: 1400px) {
+  .documents__container {
+    column-gap: 129px;
+  }
+  .single-doc {
+    width: calc((100% / 4) - (387px / 4));
+  }
   .blog-text__content {
     column-gap: 4%;
   }
@@ -293,6 +299,20 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .faq {
+    padding: 60px 0;
+  }
+  .documents {
+    padding: 80px 0;
+  }
+  .documents__container {
+    column-gap:40px;
+    row-gap: 40px;
+  }
+  .single-doc {
+    width: calc((100% / 4) - (120px / 4));
+    padding-top: 31.53%;
+  }
   .blog {
     padding-bottom: 70px;
   }
@@ -513,6 +533,28 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .hero-404 {
+    span {
+      font-size: 90px;
+    }
+    p {
+      margin: 0 0 20px;
+      font-size: 13px;
+      line-height: 23px;
+    }
+    a:not(.btn) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+  }
+  .faq-container {
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  .single-faq {
+    width: 100%;
+  }
   .form-block {
     padding-bottom: 100px;
   }
@@ -989,6 +1031,17 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .documents {
+    padding: 60px 0;
+  }
+  .documents__container {
+    column-gap:30px;
+    row-gap: 30px;
+  }
+  .single-doc {
+    width: calc((100% / 4) - (90px / 4));
+    padding-top: 30.53%;
+  }
   .service-info--reverse .service-info__container .left {
     padding-right: 0;
     padding-left: 0;
@@ -1310,6 +1363,35 @@
       padding-left: 0;
       margin-top: 30px;
       height: 600px;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .modal-container {
+    max-width: none;
+    width: 100%;
+    min-width: 0;
+    padding: 60px 24px;
+  }
+  .modal-title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .form-modal {
+    .form {
+      form {
+        .input-cont {
+          width: 100%;
+          input, textarea {
+            margin-bottom: 18px;
+          }
+        }
+        .btn {
+          width: 100%;
+          padding: 12px;
+          box-sizing: border-box;
+        }
+      }
     }
   }
 }
@@ -1658,6 +1740,14 @@
   }
 }
 @media screen and (max-width: 620px) {
+  .documents__container {
+    column-gap:30px;
+    row-gap: 30px;
+  }
+  .single-doc {
+    width: calc((100% / 3) - (60px / 3));
+    padding-top: 41.53%;
+  }
   .footer-company .go-up {
     width: 60px;
   }
@@ -1690,6 +1780,19 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .faq-text p {
+    line-height: 23px;
+  }
+  .faq {
+    padding: 50px 0;
+  }
+  .faq-head {
+    padding-top: 30px;
+    line-height: 23px;
+    &::after {
+      top: 38px;
+    }
+  }
   .form-block__container .right .form form .input-cont {
     width: 100%;
     input {
@@ -1709,6 +1812,14 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .documents__container {
+    column-gap:30px;
+    row-gap: 30px;
+  }
+  .single-doc {
+    width: calc((100% / 2) - (30px / 2));
+    padding-top: 65.53%;
+  }
   .our-work__top-container {
     padding-bottom: 90%;
   }
@@ -1890,5 +2001,29 @@
   }
   .header-center .logo {
     padding: 10px 0;
+  }
+}
+
+
+
+.card-photos__thumbs {
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #ebe0d8;
+    position: relative;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #4b4649;
+    border-radius: 8px;
   }
 }

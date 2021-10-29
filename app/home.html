@@ -13,8 +13,8 @@
 
 <main>
     <section class="hero">
-        <div class="hero-bg">
-            <img class="lazyload" data-src="./img/hero-home.png" alt="">
+        <div class="hero-bg hero-bg--video">
+            <video loop muted autoplay poster="" src="./img/home-vid.mp4" type="video/mp4"></video>
         </div>
         <div class="container">
             <div class="hero-container">
@@ -24,7 +24,7 @@
                         <a href="#">logistic@ktf.com.ua</a>
                     </div>
                 </div>
-                <div class="hero-text">
+                <div class="hero-text js-anim anim-top">
                     <div class="hero-home">
                         <h1>Специализируемся на организации доставки
                             <strong>сельхозтехники</strong> из США
@@ -35,7 +35,7 @@
                             сервис.
                         </p>
                         <div class="buttons">
-                            <a href="#" class="btn btn--blue">оставить заявку
+                            <a href="#" class="btn btn--blue btn--form">оставить заявку
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
 
@@ -60,7 +60,8 @@
                     </div>
 
                 </div>
-                <div class="play-home-btn">
+                <div class="play-home-btn" data-fancybox data-plyr
+                     href="./img/home-vid.mp4">
                     <svg width="210" height="150" viewBox="0 0 210 150" fill="none" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink">
                         <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="210"
@@ -105,14 +106,14 @@
     <section class="our-task">
         <div class="container">
             <div class="our-task__container">
-                <div class="left">
+                <div class="left js-anim anim-right">
                     <div class="title-block">
                         <p class="subtext">Наша задача -</p>
                         <h2 class="title">Организовать доставку Вашей техники так, чтобы Вы чувствовали себя <strong>комфортно.</strong>
                             А взаимоотношение с нами приносило удовольствие. Быть Вам всегда полезными! </h2>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right js-anim anim-left">
                     <div class="task-text">
                         <p>Организация доставки сельхозтехники любого размера. Гибкие тарифы, благодаря сервисным
                             контрактам с крупнейшими судоходными линиями позволят вам пользоваться нашими услугами на
@@ -134,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="task-list js-slider">
+    <section class="task-list js-slider js-anim anim-yRot">
         <div class="task-list__container swiper-container">
             <div class="swiper-wrapper">
 
@@ -322,7 +323,7 @@
     <section class="about-company js-slider">
         <div class="container">
             <div class="company-container">
-                <div class="left">
+                <div class="left js-anim anim-right">
                     <div class="title-block">
                         <p class="subtext">С 2015 года</p>
                         <h2 class="title">Мы организовали доставку более <strong>1500 единиц</strong> сель-хоз техники:
@@ -354,7 +355,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right js-anim anim-xRot">
                     <div class="company-slider">
                         <div class="slide-btns">
                             <div class="btn-slides btn-slides--prev">
@@ -375,23 +376,24 @@
                         <div class="company-slides swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="single-comp-slide swiper-slide">
-                                    <img src="./img/img-comp.jpg" alt="">
+                                    <img src="./img/tem-1-min.jpg" alt="">
                                 </div>
                                 <div class="single-comp-slide swiper-slide">
-                                    <img src="./img/img-comp.jpg" alt="">
+                                    <img src="./img/tem-2-min.jpg" alt="">
                                 </div>
                                 <div class="single-comp-slide swiper-slide">
-                                    <img src="./img/img-comp.jpg" alt="">
+                                    <img src="./img/tem-3-min.jpg" alt="">
                                 </div>
                                 <div class="single-comp-slide swiper-slide">
-                                    <img src="./img/img-comp.jpg" alt="">
+                                    <img src="./img/tm-4-min.jpg" alt="">
                                 </div>
                             </div>
 
 
                         </div>
                         <div class="company-play-card">
-                            <div class="play-card__btn">
+                            <div class="play-card__btn" data-fancybox data-plyr
+                                 href="./img/home-vid.mp4">
                                 <p>посмотреть видео
                                     о компании</p>
                                 <img src="./img/img-play-btn.png" alt="">
@@ -409,7 +411,7 @@
         <div class="our-cases__container">
             <div class="container">
 
-                <div class="our-cases__head">
+                <div class="our-cases__head js-anim anim-fadeB">
                     <div class="title-block">
                         <h2 class="title">Гордимся своими <strong>кейсами</strong></h2>
 
@@ -427,7 +429,7 @@
                 </div>
             </div>
 
-            <div class="our-cases__content swiper-container">
+            <div class="our-cases__content swiper-container js-anim anim-fadeT">
                 <div class="slide-btns">
                     <div class="btn-slides btn-slides--prev">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -551,7 +553,7 @@
             <div class="quest-container">
 
 
-                <div class="quest-block">
+                <div class="quest-block js-anim anim-blur">
 
                     <div class="title-block">
                         <p class="title ">У вас появились <strong>вопросы?</strong></p>
@@ -565,7 +567,7 @@
                             <li><a href="#"><img src="./img/soc-ins.svg" alt=""></a></li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn--trans call-mod">оставить заявку
+                    <a href="#" class="btn btn--trans btn--form">оставить заявку
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
 
@@ -596,7 +598,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="seo-text">
+                <div class="seo-text js-anim anim-right">
                     <h1>КТФ – 4PL провайдер логистических услуг (h1)</h1>
                     <p>Мы специализируемся на <a href="#">организации доставки</a> сельскохозяйственной техники из США.
                         Компания работает на рынке Украины с 2015 года. С момента основания компании мы организовали
@@ -625,10 +627,10 @@
 
                 </div>
             </div>
-            <div class="img-slider swiper-container">
+            <div class="img-slider js-anim anim-blur swiper-container">
                 <div class="swiper-wrapper">
                     <div class="img-slide swiper-slide">
-                        <img src="./img/lodka.jpg" alt="">
+                        <img src="./img/bg-bg-bg.jpg" alt="">
                     </div>
                     <div class="img-slide swiper-slide">
                         <img src="./img/tachka.jpg" alt="">
@@ -640,7 +642,7 @@
     <section class="recommends">
         <div class="container">
             <div class="recommends-container">
-                <div class="left">
+                <div class="left js-anim anim-fadeT">
                     <div class="title-block">
                         <p class="subtext">Важно для нас</p>
                         <h3 class="title">Мы дорожим <strong>каждым</strong>
@@ -660,22 +662,22 @@
                 <div class="right">
                     <div class="rec-stats">
                         <div class="single-stat">
-                            <span>+1500</span>
+                            <span><strong>+</strong><span>1500</span></span>
                             <p>Единиц техники было доставлено за весь период нашей работы и мы, конечно же, не
                                 собираемся останавливаться</p>
                         </div>
                         <div class="single-stat">
-                            <span>+2190</span>
+                            <span><strong>+</strong><span>2190</span></span>
                             <p>Дней мы стараемся сделать так, чтобы доставка грузов казалась для вас не сложнее, чем
                                 поход в продуктовый</p>
                         </div>
                         <div class="single-stat">
-                            <span>+100</span>
+                            <span><strong>+</strong><span>100</span></span>
                             <p>Клиентов, которые уже нам доверяют и убедились на личном опыте, что доставка груза - это
                                 просто</p>
                         </div>
                         <div class="single-stat">
-                            <span>12</span>
+                            <span><span>12</span></span>
                             <p>Сотрудников, которые действительно хотят сделать вашу жизнь проще
                                 и доставить ваш груз без проблем</p>
                         </div>
@@ -687,7 +689,7 @@
     </section>
     <section class="our-team js-slider">
         <div class="container">
-            <div class="text">
+            <div class="text js-anim anim-right">
                 <div class="title-block">
                     <p class="subtext">В нашей команде</p>
                     <h3 class="title">придерживаются <strong>принципов,</strong> которые помогают выстраивать
@@ -709,7 +711,7 @@
             </div>
 
         </div>
-        <div class="team-slider-container ">
+        <div class="team-slider-container js-anim anim-left">
 
 
             <div class="slide-btns">
@@ -732,7 +734,7 @@
                 <div class="swiper-wrapper">
                     <div class="single-team swiper-slide">
                         <div class="img">
-                            <img src="./img/tm-1.jpg" alt="">
+                            <img src="./img/12-1-min.jpg" alt="">
                         </div>
                         <div class="text">
                             <p>Олег Кошелап</p>
@@ -743,7 +745,7 @@
                     </div>
                     <div class="single-team swiper-slide">
                         <div class="img">
-                            <img src="./img/tm-2.jpg" alt="">
+                            <img src="./img/12-2-min.jpg" alt="">
                         </div>
                         <div class="text">
                             <p>Сергей Черный</p>
@@ -754,7 +756,7 @@
                     </div>
                     <div class="single-team swiper-slide">
                         <div class="img">
-                            <img src="./img/tm-3.jpg" alt="">
+                            <img src="./img/12-3-min.jpg" alt="">
                         </div>
                         <div class="text">
                             <p>Наталия Исаенко</p>
@@ -764,7 +766,7 @@
                     </div>
                     <div class="single-team swiper-slide">
                         <div class="img">
-                            <img src="./img/tm-2.jpg" alt="">
+                            <img src="./img/12-4-min.jpg" alt="">
                         </div>
                         <div class="text">
                             <p>Сергей Черный</p>
@@ -775,7 +777,7 @@
                     </div>
                     <div class="single-team swiper-slide">
                         <div class="img">
-                            <img src="./img/tm-3.jpg" alt="">
+                            <img src="./img/12-5-min.jpg" alt="">
                         </div>
                         <div class="text">
                             <p>Наталия Исаенко</p>
@@ -791,7 +793,7 @@
     </section>
     <section class="our-news">
         <div class="container">
-            <div class="head">
+            <div class="head js-anim anim-fadeT">
                 <div class="title-block">
                     <p class="subtext">Следите за нашими новостями</p>
                     <h3 class="title">Мы публикуем только самое <strong>важное</strong> для вас.</h3>
@@ -808,7 +810,7 @@
                 </a>
             </div>
             <div class="news-container">
-                <a href="#" class="single-news">
+                <a href="#" class="single-news js-anim anim-fadeT">
                     <div class="img">
                         <img class="lazyload" data-src="./img/n-1.jpg" alt="">
                     </div>
@@ -829,7 +831,7 @@
 
                     </div>
                 </a>
-                <a href="#" class="single-news">
+                <a href="#" class="single-news js-anim anim-fadeT">
                     <div class="img">
                         <img class="lazyload" data-src="./img/n-2.jpg" alt="">
                     </div>
@@ -849,7 +851,7 @@
 
                     </div>
                 </a>
-                <a href="#" class="single-news">
+                <a href="#" class="single-news js-anim anim-fadeT">
                     <div class="img">
                         <img class="lazyload" data-src="./img/n-3.jpg" alt="">
                     </div>
@@ -873,6 +875,42 @@
             </div>
         </div>
     </section>
+
+    <div class="preloader">
+        <div class="bar">
+
+        </div>
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px"
+             y="0px"
+             viewBox="0 0 1449 605" style="enable-background:new 0 0 1449 605;" xml:space="preserve">
+<style type="text/css">
+	.st0 {
+        fill: #1FAEE9;
+        stroke: #1FAEE9;
+        stroke-width: 10;
+    }
+
+    .st1 {
+        fill: #FE6400;
+        stroke: #FE6400;
+        stroke-width: 5;
+        z-index: 2;
+    }
+</style>
+            <polygon class="st0 let-k" points="0.6,-0.4 151.2,-0.4 151.2,192.5 297,0.1 446.1,0.1 220.1,303.2 446.1,605.1 296.6,604.9 150.8,412.5
+	151.7,605.3 0,605.3 "/>
+            <polygon class="st0 let-t"
+                     points="603.7,604.3 755,604.3 755,160.3 905,160.3 905,0.3 527.3,0.3 409,160.3 602.3,160.3 "/>
+            <polygon class="st0 let-f" points="905,604.3 905,1 1143.7,1 1262.3,159 1063,159 1063,302.9 1294.3,302.9 1224.3,398.3 1062.7,398.3
+	1062.7,603 "/>
+            <polygon class="st1 pol-l" points="446.1,0.1 527.3,0.1 294.7,308.3 516.8,605.2 446.1,605.1 220.1,303.2 "/>
+            <polygon class="st1 pol-r" points="1143.7,1 1367,298.3 1136.3,606.3 1214.3,606.3 1442.8,303.3 1216.3,0.3 "/>
+</svg>
+
+    </div>
 </main>
 
 
