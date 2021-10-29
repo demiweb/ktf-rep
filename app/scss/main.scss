@@ -5074,7 +5074,7 @@ svg {
     fill: transparent;
 
     &.animed {
-      animation: dash2 2.2s linear forwards, filling 4s ease-in forwards;
+      animation: dash2 2.4s linear forwards, filling 4s ease-in forwards;
     }
   }
 
@@ -5086,7 +5086,7 @@ svg {
     fill: transparent;
 
     &.animed {
-      animation: dash3 2.2s linear forwards, filling 4s ease-in forwards;
+      animation: dash3 2.4s linear forwards, filling 4s ease-in forwards;
     }
   }
 
@@ -5100,7 +5100,7 @@ svg {
 
   .pol-l, .pol-r {
     opacity: 0;
-    transition: opacity 0.7s ease, transform 1.0s ease;
+    transition: opacity 0.9s ease, transform 1.2s ease;
 
     &.animed {
       transform: translate(0, 0);
