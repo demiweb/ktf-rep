@@ -86,7 +86,7 @@ function loadPreloader() {
             setTimeout(() => {
                 fLet.classList.add('animed');
                 bar.style.width = '50%';
-            }, 1500);
+            }, 1200);
             setTimeout(() => {
                 leftPol.classList.add('animed');
                 rightPol.classList.add('animed');

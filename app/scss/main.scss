@@ -5043,6 +5043,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   &.animed {
     svg {
       animation: dash5 1.3s linear forwards, filling 4s ease-in forwards;
+      transition: top 1.2s ease;
     }
   }
 
@@ -5086,7 +5087,7 @@ svg {
     fill: transparent;
 
     &.animed {
-      animation: dash3 2.4s linear forwards, filling 4s ease-in forwards;
+      animation: dash3 2.2s linear forwards, filling 4s ease-in forwards;
     }
   }
 
@@ -5147,6 +5148,8 @@ svg {
     fill: rgba(255, 255, 255, 0);
   }
   100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
     fill: #1FAEE9;
     opacity: 1;
   }
@@ -5171,6 +5174,7 @@ svg {
     fill: rgba(255, 255, 255, 0);
   }
   100% {
+    stroke-dasharray: 0;
     fill: #1FAEE9;
     opacity: 1;
   }
@@ -5195,6 +5199,7 @@ svg {
     fill: rgba(255, 255, 255, 0);
   }
   100% {
+    stroke-dasharray: 0;
     fill: #1FAEE9;
     opacity: 1;
   }
