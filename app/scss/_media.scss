@@ -1367,6 +1367,9 @@
   }
 }
 @media screen and (max-width: 760px) {
+  .preloader {
+    display: none !important;
+  }
   .modal-container {
     max-width: none;
     width: 100%;

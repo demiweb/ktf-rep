@@ -65,7 +65,7 @@ function loadPreloader() {
     if (!preloaderBlock.length) {
 
     } else {
-        document.body.classList.add('no-scroll');
+        // document.body.classList.add('no-scroll');
         document.body.scrollTo(0, 0);
         preloaderBlock.forEach((block) => {
             let svg = block.querySelector('svg');
@@ -101,7 +101,7 @@ function loadPreloader() {
             }, 5000);
             setTimeout(() => {
                 block.classList.add('over');
-                document.body.classList.remove('no-scroll');
+                // document.body.classList.remove('no-scroll');
             }, 5000);
         })
     }
