@@ -69,12 +69,15 @@ function loadPreloader() {
         document.body.scrollTo(0, 0);
         preloaderBlock.forEach((block) => {
             let svg = block.querySelector('svg');
-            let bar = block.querySelector('.bar');
+            let spanText = block.querySelector('.pre-text span');
+            let spanTextBl = block.querySelector('.pre-text');
+            let bar = block.querySelector('.bar-1');
             let kLet = block.querySelector('.let-k');
             let fLet = block.querySelector('.let-f');
             let tLet = block.querySelector('.let-t');
             let leftPol = block.querySelector('.pol-l');
             let rightPol = block.querySelector('.pol-r');
+            startCountdown(100, spanText, spanTextBl);
             setTimeout(() => {
                 kLet.classList.add('animed');
                 bar.style.width = '15%';
@@ -106,6 +109,22 @@ function loadPreloader() {
         })
     }
 }
+
+function startCountdown(seconds, span, block) {
+    let startNumber = 1;
+    let counter = seconds;
+    let interV = 4300 / seconds;
+    const interval = setInterval(() => {
+        console.log(counter);
+        startNumber++;
+        span.innerHTML = startNumber;
+        if (startNumber === 100 ) {
+            clearInterval(interval);
+            block.classList.add('animed');
+            console.log('Ding!');
+        }
+    }, interV);
+}
 loadPreloader();
 
 let jsAnimBlocks = [...document.querySelectorAll('.js-anim')];
@@ -115,7 +134,7 @@ var Visible3 = function (target) {
     } else {
 
         var targetPosition = {
-                top: window.pageYOffset + target.getBoundingClientRect().top + 150,
+                top: window.pageYOffset + target.getBoundingClientRect().top + 90,
                 left: window.pageXOffset + target.getBoundingClientRect().left,
                 right: window.pageXOffset + target.getBoundingClientRect().right,
                 bottom: window.pageYOffset + target.getBoundingClientRect().bottom
@@ -135,7 +154,7 @@ var Visible3 = function (target) {
             // Если элемент полностью видно, то запускаем следующий код
             setTimeout(() => {
                 target.classList.add('anim-start');
-            }, 120)
+            }, 60)
 
 
         } else {
@@ -153,7 +172,7 @@ window.addEventListener('scroll', function () {
     jsAnimBlocks.forEach((el, k) => {
         setTimeout(() => {
             Visible3(el);
-        }, k * 70)
+        }, k * 30)
     })
 
 });
@@ -163,7 +182,7 @@ window.addEventListener('scroll', function () {
 jsAnimBlocks.forEach((el, k) => {
     setTimeout(() => {
         Visible3(el);
-    }, k * 60)
+    }, k * 30)
 });
 
 function animateValue(el, start, end, duration) {
